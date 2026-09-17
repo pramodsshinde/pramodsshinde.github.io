@@ -30,6 +30,27 @@ $header-hover-color:$text-color;
 $header-hover-url:  $url-color;
 $line-color:        $grey-light;
 
+.heading-highlight {
+    position: relative;
+    display: inline;
+    z-index: 0;
+    white-space: nowrap;
+}
+
+.heading-highlight::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -0.08em;
+    right: -0.08em;
+    bottom: 0.08em;
+    height: 0.28em;
+    transform: rotate(-1deg);
+}
+
+.heading-highlight.cyan::after { background: rgba(45, 197, 200, 0.55); }
+.heading-highlight.orange::after { background: rgba(236, 107, 61, 0.45); }
+
 // Width of the content area
 $content-width:    50em;
 $content-min-width:15em;
