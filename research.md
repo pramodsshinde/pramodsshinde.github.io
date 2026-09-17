@@ -147,7 +147,9 @@ pubs:
 
 ---
 
-## Publications (peer reviewed)
+## <span class="heading-highlight orange">Publications</span>
+
+Google Scholar lists 20 publications and 345 citations as of September 2026. [View the complete profile](https://scholar.google.com/citations?user=2GeAO4IAAAAJ&hl=en).
 
 {% assign thumbnail="left" %}
 
