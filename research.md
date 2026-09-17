@@ -145,7 +145,7 @@ pubs:
 
     - title: "A multilayer protein-protein interaction network analysis of different life stages in Caenorhabditis elegans"
       theme: "networks"
-      project: "multilayer"
+      project: "disease"
       author: "P. Shinde, S. Jalan"
       journal: "Europhysics Letters"
       year: "2015"
@@ -209,12 +209,7 @@ pubs:
 {% for pub in project_papers limit: 1 %}<p class="featured-title"><a href="{% if pub.url %}{{ pub.url }}{% else %}https://doi.org/{{ pub.doi }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></p>{% endfor %}</div>
 <details class="related-papers"><summary>All related publications ({{ project_papers.size }})</summary>
 {% for pub in project_papers %}<article><h4>{% if pub.url %}<a href="{{ pub.url }}">{{ pub.title }}</a>{% elsif pub.doi and pub.doi != "N/A" %}<a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4><p>{{ pub.author }}</p><p><em>{{ pub.journal }}</em> · {{ pub.year }}</p></article>{% endfor %}
-</details></div></article><article class="project-panel"><div class="panel-content"><h3>Cancer networks &amp; drug targets</h3><p class="research-question">Can network structure point to disease-relevant features?</p><p>These papers examine symmetry, duplication, disassortativity, and network spectra to investigate cancer-associated organization and approaches to drug-target identification.</p></div><div class="panel-references">{% assign project_id = "disease" %}{% assign project_papers = page.pubs | where: "project", project_id %}
-<div class="featured-papers"><p class="panel-label">Featured publication</p>
-{% for pub in project_papers limit: 1 %}<p class="featured-title"><a href="{% if pub.url %}{{ pub.url }}{% else %}https://doi.org/{{ pub.doi }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></p>{% endfor %}</div>
-<details class="related-papers"><summary>All related publications ({{ project_papers.size }})</summary>
-{% for pub in project_papers %}<article><h4>{% if pub.url %}<a href="{{ pub.url }}">{{ pub.title }}</a>{% elsif pub.doi and pub.doi != "N/A" %}<a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4><p>{{ pub.author }}</p><p><em>{{ pub.journal }}</em> · {{ pub.year }}</p></article>{% endfor %}
-</details></div></article><article class="project-panel"><div class="panel-content"><h3>Networks across development</h3><p class="research-question">How can interactions be studied across life stages?</p><p>A multilayer protein–protein interaction analysis of Caenorhabditis elegans considers biological organization across developmental stages.</p></div><div class="panel-references">{% assign project_id = "multilayer" %}{% assign project_papers = page.pubs | where: "project", project_id %}
+</details></div></article><article class="project-panel"><div class="panel-content"><h3>Disease &amp; Developmental Networks</h3><p class="research-question">What can network structure reveal about disease and development?</p><p>These studies use network structure to investigate cancer-associated organization, drug-target identification, and biological changes across development. Methods include symmetry, duplication, disassortativity, network spectra, and multilayer protein–protein interaction analysis across life stages in Caenorhabditis elegans.</p></div><div class="panel-references">{% assign project_id = "disease" %}{% assign project_papers = page.pubs | where: "project", project_id %}
 <div class="featured-papers"><p class="panel-label">Featured publication</p>
 {% for pub in project_papers limit: 1 %}<p class="featured-title"><a href="{% if pub.url %}{{ pub.url }}{% else %}https://doi.org/{{ pub.doi }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></p>{% endfor %}</div>
 <details class="related-papers"><summary>All related publications ({{ project_papers.size }})</summary>
