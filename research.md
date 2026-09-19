@@ -4,6 +4,33 @@ permalink: /research/
 title: Publications
 pubs:
 
+    - title: "An Open Benchmark for Systems Vaccinology: Insights from the CMI-PB Challenges"
+      theme: "vaccinology"
+      project: "cmipb"
+      author: "P. Shinde, L. Willemsen, J. Lee, S. Orfield, Z. Ren, M. Aoki, N. Thrupp, A. Gupta, C.-C. Wu, L. Mao, C. Li, Y. Tan, T.A. Nguyen, N.-S. Chang, P.S.L. Schäfer, J. Xing, C.C.A. Marandi, B. Sabuwala, CMI-PB Challenge Contestants, J. Reyna, J.P. Gygi, B. Ha, J.A. Overton, T. Einav, J.A. Greenbaum, L. Guan, M. Kojima, F. Ay, B. Grant, S.H. Kleinstein, B. Peters"
+      journal: "bioRxiv (preprint)"
+      year: "2026"
+      url: "https://www.biorxiv.org/content/10.64898/2026.08.25.746820v1.abstract"
+      doi: "10.64898/2026.08.25.746820"
+
+    - title: "Pre-existing antibodies predict protection while mucosal inflammation correlates with symptomatic Bordetella pertussis infection"
+      theme: "vaccinology"
+      project: "mechanisms"
+      author: "L. Willemsen, Z. Ren, P. Shinde, N. Thrupp, J. Lee, A. Gupta, A. Sutherland, S. Orfield, M. Kojima, A. Azhan, J. Sun, A. Frazier, S. Hariri, S. Halperin, M. ElSherif, B. Peters"
+      journal: "medRxiv (preprint)"
+      year: "2026"
+      url: "https://www.medrxiv.org/content/10.64898/2026.06.26.26356067v1"
+      doi: "10.64898/2026.06.26.26356067"
+
+    - title: "Brain rewiring during development: A comparative analysis of larval and adult Drosophila melanogaster connectomes"
+      theme: "networks"
+      project: "disease"
+      author: "P. Yadav, P. Shinde, A. Singh"
+      journal: "Network Neuroscience"
+      year: "2025"
+      url: "https://direct.mit.edu/netn/article/9/4/1299/131736/Brain-rewiring-during-development-A-comparative"
+      doi: "10.1162/netn.a.26"
+
     - title: "Putting computational models of immunity to the test—An invited challenge to predict B. pertussis vaccination responses"
       theme: "vaccinology"
       project: "cmipb"
