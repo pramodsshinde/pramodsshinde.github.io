@@ -1,0 +1,31 @@
+---
+layout: page
+---
+{% assign project = site.data.research_projects | where: "slug", page.project_slug | first %}
+<div class="p-page research-project">
+  <nav class="research-back" aria-label="Research navigation"><a href="{{ '/research/' | relative_url }}">← All research areas</a></nav>
+  <header class="p-intro"><p class="p-label">{{ project.area }}</p><p>{{ project.summary }}</p></header>
+  <section class="research-description">
+    <h2>{{ project.question }}</h2>
+    <p>{{ project.overview }}</p>
+    <h3>Research approach</h3>
+    <ul>{% for item in project.approach %}<li>{{ item }}</li>{% endfor %}</ul>
+    {% if project.resource %}<a href="{{ project.resource }}">{{ project.resource_label }} →</a>{% endif %}
+  </section>
+  <section class="p-area">
+    <header><p class="p-label">Publications</p><h2>Related work</h2></header>
+    <ul class="p-papers">
+      {% assign papers = site.data.publications | sort: "year" | reverse %}
+      {% for pub in papers %}
+      {% if project.ids contains pub.project %}
+      <li>
+        {% if pub.url %}<a href="{{ pub.url | escape }}">{{ pub.title | escape }}</a>{% elsif pub.doi and pub.doi != "N/A" %}<a href="https://doi.org/{{ pub.doi | escape }}">{{ pub.title | escape }}</a>{% else %}<strong>{{ pub.title | escape }}</strong>{% endif %}
+        <span>{{ pub.author | escape }}</span>
+        <span><em>{{ pub.journal | escape }}</em> · {{ pub.year }}</span>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  <a class="research-back" href="{{ '/publications/' | relative_url }}">View all publications →</a>
+</div>

@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "cmipb",
+    "title": "CMI-PB prediction challenges",
+    "area": "Systems immunology",
+    "ids": [
+      "cmipb"
+    ],
+    "summary": "Longitudinal immune profiling and community benchmarks for predicting responses to pertussis vaccination.",
+    "question": "How well can baseline immune measurements predict a vaccine response?",
+    "overview": "CMI-PB combines a longitudinal pertussis booster study with challenges that test computational predictions against experimental measurements. The resource brings together gene expression, antibody, cytokine, and immune-cell data.",
+    "approach": [
+      "Harmonizing immune measurements across study cohorts.",
+      "Evaluating predictions on held-out participants.",
+      "Comparing model performance across distinct immune outcomes."
+    ],
+    "resource": "https://www.cmi-pb.org/",
+    "resource_label": "Explore CMI-PB"
+  },
+  {
+    "slug": "pertussis-immunity",
+    "title": "Pertussis immunity & immune memory",
+    "area": "Systems immunology",
+    "ids": [
+      "mechanisms"
+    ],
+    "summary": "Antibody-associated protection, vaccine-induced Th1 polarization, and B-cell receptor repertoire responses.",
+    "question": "What shapes protection and the persistence of vaccine-induced responses?",
+    "overview": "This work examines different aspects of pertussis immunity: pre-existing antibodies associated with protection after exposure, feedback that maintains Th1 polarization after vaccination, and the predictability of vaccination-induced B-cell receptor repertoires.",
+    "approach": [
+      "Relating immune measurements to infection outcomes.",
+      "Studying cellular polarization after pertussis vaccination.",
+      "Assessing patterns in B-cell receptor repertoire responses."
+    ]
+  },
+  {
+    "slug": "covid-multiomics",
+    "title": "COVID-19 multi-omics",
+    "area": "Systems immunology",
+    "ids": [
+      "covid"
+    ],
+    "summary": "Molecular and cellular programs associated with acute COVID-19 severity and mortality.",
+    "question": "Which immune programs track the course of severe infection?",
+    "overview": "The IMPACC study follows patients hospitalized with COVID-19, linking clinical outcomes to longitudinal molecular and immune measurements. Multi-omics analyses examine programs associated with disease severity and mortality.",
+    "approach": [
+      "Analyzing longitudinal measurements across multiple assays.",
+      "Connecting molecular patterns with clinical outcomes.",
+      "Interpreting shared and assay-specific immune programs."
+    ]
+  },
+  {
+    "slug": "mitochondrial-networks",
+    "title": "Mitochondrial interaction networks",
+    "area": "Network biology",
+    "ids": [
+      "mitochondria"
+    ],
+    "summary": "Genetic co-occurrence, epistasis, and higher-order interactions in mitochondrial genomes.",
+    "question": "What can relationships among variants reveal about mitochondrial evolution?",
+    "overview": "These studies represent mitochondrial variation as networks of relationships among nucleotides, codons, and mutations. They investigate interaction patterns across human populations, including populations living at different altitudes.",
+    "approach": [
+      "Constructing nucleotide and codon co-occurrence networks.",
+      "Examining motifs, modular organization, and epistatic interactions.",
+      "Studying higher-order co-mutation patterns."
+    ]
+  },
+  {
+    "slug": "disease-development",
+    "title": "Disease & developmental networks",
+    "area": "Network biology",
+    "ids": [
+      "cancer",
+      "development"
+    ],
+    "summary": "Cancer networks, drug-target analysis, and changes in biological networks across development.",
+    "question": "How does network organization reflect disease and developmental change?",
+    "overview": "This work applies network analysis to cancer-associated organization and potential drug targets, and to biological changes across life stages. The developmental studies compare fly connectomes and multilayer protein interaction networks in C. elegans.",
+    "approach": [
+      "Examining symmetry, duplication, and disassortativity in cancer networks.",
+      "Using network spectra to investigate drug targets.",
+      "Comparing connectome and protein interaction networks across development."
+    ]
+  },
+  {
+    "slug": "influenza",
+    "title": "Influenza & antiviral research",
+    "area": "Virology",
+    "ids": [
+      "surveillance",
+      "antiviral"
+    ],
+    "summary": "Viral genetic characterization, antiviral resistance, and experimental anti-influenza activity.",
+    "question": "How do circulating influenza strains vary in their susceptibility to antivirals?",
+    "overview": "This research characterizes influenza strains from Mumbai during the 2009 pandemic, including drug susceptibility and oseltamivir resistance. Related experimental work assesses plant extracts for anti-influenza activity and hemagglutination inhibition.",
+    "approach": [
+      "Characterizing circulating H1N1 and H3N2 isolates.",
+      "Investigating antiviral susceptibility and resistance.",
+      "Evaluating Plumbago indica and Allium sativum extracts in laboratory assays."
+    ]
+  }
+]

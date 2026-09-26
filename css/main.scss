@@ -174,3 +174,21 @@ $desktop:          50em;
 .p-papers li span { display: block; font-size: .85em; color: #66706c; margin-top: .15em; }
 .resources-page .resource-card { border-radius: 0; border-color: #d5ddda; }
 @media screen and (max-width: 700px) { .p-grid { grid-template-columns: 1fr; } .p-intro > p:not(.p-label) { font-size: .9em; } }
+
+/* Research landing page and dedicated project pages */
+.research-overview .p-grid { gap: 1em; }
+.research-overview .p-card { padding: 1.3em; border-radius: 8px; box-shadow: 0 3px 12px rgba(25,55,48,.035); }
+.research-overview .p-card h2 { font-size: 1.06em; line-height: 1.3; margin: .25em 0 .6em; }
+.research-overview .p-card h2 a { color: #205f59; }
+.research-overview .p-card > a { padding-top: .5em; color: #205f59; }
+.research-overview .p-card:hover { border-color: #789e93; }
+.research-overview a:focus-visible, .research-project a:focus-visible { outline: 2px solid #206967; outline-offset: 4px; }
+.research-resources { margin-top: 2.2em; padding: 1.3em; border-left: 3px solid #357c70; background: #e9f0ec; border-radius: 0 8px 8px 0; }
+.research-resources h2 { font-size: 1.1em; margin: 0 0 .5em; }
+.research-resources p:not(.p-label), .research-resources > a { font-size: .78em; }
+.research-back { display: block; font-size: .72em; margin-bottom: 1.5em; }
+.research-description { margin-bottom: 2em; }
+.research-description h2 { font-size: 1.2em; line-height: 1.35; }
+.research-description h3 { font-size: .95em; margin: 1.3em 0 .6em; }
+.research-description p, .research-description ul, .research-description > a { font-size: .8em; line-height: 1.6; }
+@media screen and (max-width: 700px) { .research-overview .p-card { padding: 1em; } }
