@@ -3,4 +3,31 @@ layout: page
 permalink: /publications/
 title: Publications
 ---
-<div class="p-page"><header class="p-intro"><p class="p-label">Publication record</p><p>Full paper titles organized by research area and project. Preprints are identified in the journal line.</p><a href="https://scholar.google.com/citations?user=2GeAO4IAAAAJ&amp;hl=en">Google Scholar profile →</a></header><section class="p-area"><header><p class="p-label">Research area</p><h2>Systems immunology & vaccinology</h2></header><div class="p-group"><h3><a href="{{ '/research/' | relative_url }}#cmipb">CMI-PB challenges</a></h3>{% assign papers = site.data.publications | where: "project", "cmipb" %}<ul class="p-papers">{% for pub in papers %}<li><a href="{% if pub.url %}{{ pub.url }}{% elsif pub.doi and pub.doi != 'N/A' %}https://doi.org/{{ pub.doi }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></li>{% endfor %}</ul></div><div class="p-group"><h3><a href="{{ '/research/' | relative_url }}#mechanisms">Pertussis immunity & B-cell memory</a></h3>{% assign papers = site.data.publications | where: "project", "mechanisms" %}<ul class="p-papers">{% for pub in papers %}<li><a href="{% if pub.url %}{{ pub.url }}{% elsif pub.doi and pub.doi != 'N/A' %}https://doi.org/{{ pub.doi }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></li>{% endfor %}</ul></div><div class="p-group"><h3><a href="{{ '/research/' | relative_url }}#covid">COVID-19 multi-omics</a></h3>{% assign papers = site.data.publications | where: "project", "covid" %}<ul class="p-papers">{% for pub in papers %}<li><a href="{% if pub.url %}{{ pub.url }}{% elsif pub.doi and pub.doi != 'N/A' %}https://doi.org/{{ pub.doi }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></li>{% endfor %}</ul></div></section><section class="p-area"><header><p class="p-label">Research area</p><h2>Network biology & mitochondrial genomics</h2></header><div class="p-group"><h3><a href="{{ '/research/' | relative_url }}#mitochondria">Mitochondrial interaction networks</a></h3>{% assign papers = site.data.publications | where: "project", "mitochondria" %}<ul class="p-papers">{% for pub in papers %}<li><a href="{% if pub.url %}{{ pub.url }}{% elsif pub.doi and pub.doi != 'N/A' %}https://doi.org/{{ pub.doi }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></li>{% endfor %}</ul></div><div class="p-group"><h3><a href="{{ '/research/' | relative_url }}#cancer">Cancer networks & drug targets</a></h3>{% assign papers = site.data.publications | where: "project", "cancer" %}<ul class="p-papers">{% for pub in papers %}<li><a href="{% if pub.url %}{{ pub.url }}{% elsif pub.doi and pub.doi != 'N/A' %}https://doi.org/{{ pub.doi }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></li>{% endfor %}</ul></div><div class="p-group"><h3><a href="{{ '/research/' | relative_url }}#development">Networks across development</a></h3>{% assign papers = site.data.publications | where: "project", "development" %}<ul class="p-papers">{% for pub in papers %}<li><a href="{% if pub.url %}{{ pub.url }}{% elsif pub.doi and pub.doi != 'N/A' %}https://doi.org/{{ pub.doi }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></li>{% endfor %}</ul></div></section><section class="p-area"><header><p class="p-label">Research area</p><h2>Influenza & antiviral research</h2></header><div class="p-group"><h3><a href="{{ '/research/' | relative_url }}#surveillance">Influenza surveillance & resistance</a></h3>{% assign papers = site.data.publications | where: "project", "surveillance" %}<ul class="p-papers">{% for pub in papers %}<li><a href="{% if pub.url %}{{ pub.url }}{% elsif pub.doi and pub.doi != 'N/A' %}https://doi.org/{{ pub.doi }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></li>{% endfor %}</ul></div><div class="p-group"><h3><a href="{{ '/research/' | relative_url }}#antiviral">Experimental antiviral activity</a></h3>{% assign papers = site.data.publications | where: "project", "antiviral" %}<ul class="p-papers">{% for pub in papers %}<li><a href="{% if pub.url %}{{ pub.url }}{% elsif pub.doi and pub.doi != 'N/A' %}https://doi.org/{{ pub.doi }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{{ pub.title }}</a><span>{{ pub.journal }} · {{ pub.year }}</span></li>{% endfor %}</ul></div></section></div>
+
+<div class="p-page">
+  <header class="p-intro">
+    <p>Publications and preprints, listed by year.</p>
+    <a href="https://scholar.google.com/citations?user=2GeAO4IAAAAJ&amp;hl=en">Google Scholar profile →</a>
+  </header>
+  {% assign publication_years = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+  {% for year in publication_years %}
+  <section class="p-area" aria-labelledby="year-{{ year.name }}">
+    <header><h2 id="year-{{ year.name }}">{{ year.name }}</h2></header>
+    <ul class="p-papers">
+      {% for pub in year.items %}
+      <li>
+        {% if pub.url %}
+        <a href="{{ pub.url | escape }}">{{ pub.title | escape }}</a>
+        {% elsif pub.doi and pub.doi != 'N/A' %}
+        <a href="https://doi.org/{{ pub.doi | escape }}">{{ pub.title | escape }}</a>
+        {% else %}
+        <strong>{{ pub.title | escape }}</strong>
+        {% endif %}
+        <span>{{ pub.author | escape }}</span>
+        <span><em>{{ pub.journal | escape }}</em> · {{ pub.year }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
