@@ -6,21 +6,28 @@ permalink: /
 
 <div class="about-page">
   <div class="about-intro">
-    <p class="about-role">Associate Research Scientist · Yale School of Medicine</p>
-    <p>I am an Associate Research Scientist in Pathology at the <a href="https://medicine.yale.edu/pathology/">Yale School of Medicine</a>, working in the <a href="https://medicine.yale.edu/lab/kleinstein/">Kleinstein Lab</a> led by <a href="https://medicine.yale.edu/profile/steven-kleinstein/">Prof. Steven Kleinstein</a>. My research combines computational biology, statistics, and immunology to understand how the human immune system responds to infection and vaccination.</p>
+    <p class="about-role">Computational biology · Systems immunology · Network biology</p>
+    <p>I am Pramod Shinde, a computational biologist studying why immune responses differ across people. I am particularly interested in what a person's immune state before vaccination or infection can tell us about their subsequent response.</p>
+    <p>My work brings together biological data, statistical modeling, and computational tools to study these differences—from interactions between genes and proteins to patterns across human cohorts.</p>
   </div>
 
   <section class="about-section">
-    <h2>Research</h2>
-    <p>I develop multi-omics integration and machine learning approaches to identify predictive immune signatures across transcriptomic, proteomic, and immune-profiling data. A major focus is building reproducible computational frameworks to evaluate models of vaccine-induced immunity, including international initiatives such as <a href="https://www.cmi-pb.org/">CMI-PB</a> and CMI-Flu.</p>
-    <p>My broader interests span network biology, AI-assisted discovery, and science communication. I enjoy collaborations that bring computational and experimental teams together to understand complex biological systems.</p>
+    <h2>What I work on</h2>
+    <p>I analyze gene expression, proteins, metabolites, immune-cell populations, and antibody measurements to identify patterns associated with immune responses. A central question is how well those patterns hold up in independent cohorts and whether they can support useful predictions.</p>
+    <p>My work on <a href="https://www.cmi-pb.org/">CMI-PB</a> connects longitudinal immune profiling with community challenges that test predictions of pertussis vaccine responses. My broader research includes multi-omics analysis, B-cell receptor repertoires, and the reproducibility of single-cell annotations.</p>
     <a class="about-research-link" href="{{ '/research/' | relative_url }}">Explore research areas →</a>
   </section>
 
   <section class="about-section">
-    <h2>Background</h2>
-    <p>Before joining Yale, I was a Postdoctoral Researcher in Systems Immunology at the <a href="https://www.lji.org/">La Jolla Institute for Immunology</a>, in the group of <a href="https://www.lji.org/labs/peters/">Prof. Bjoern Peters</a>.</p>
-    <p>I completed my Ph.D. in Biosciences and Bioengineering at <a href="https://www.iiti.ac.in/">IIT Indore</a>, studying mitochondrial evolution and genetic network organization under <a href="https://www.iiti.ac.in/people/~sarika/">Prof. Sarika Jalan</a>. I previously earned an MSc in Bioinformatics and a BSc in Microbiology from the University of Mumbai.</p>
+    <h2>How I approach research</h2>
+    <p>I work across the full analysis process: making datasets comparable, developing and evaluating models, and building resources that others can use. This includes reproducible workflows, benchmarks, and databases that connect published findings to their underlying data.</p>
+    <p>My background in network biology shapes how I think about complex systems. I look at relationships among biological measurements as well as individual features, and work with experimental collaborators to interpret what these patterns mean.</p>
+  </section>
+
+  <section class="about-section">
+    <h2>My path</h2>
+    <p>My training began in microbiology and bioinformatics at the University of Mumbai. During my Ph.D. at IIT Indore, I studied genomic and proteomic networks, including mitochondrial evolution. I then moved into systems immunology as a postdoctoral researcher at the La Jolla Institute for Immunology.</p>
+    <p>I am now an Associate Research Scientist in Pathology at the <a href="https://medicine.yale.edu/pathology/">Yale School of Medicine</a>, working with <a href="https://medicine.yale.edu/lab/kleinstein/">Steven Kleinstein</a>.</p>
   </section>
 
   <div class="about-connect">
