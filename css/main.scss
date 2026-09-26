@@ -146,3 +146,31 @@ $desktop:          50em;
 .resource-description { font-size:.78em; color:#555; line-height:1.5; margin:0 0 1.2em; }
 .resource-action { margin-top:auto; font-size:.75em; }
 .resources-page a:focus-visible { outline:2px solid #206967; outline-offset:3px; }
+
+/* Research portfolio */
+.p-page { max-width: 46em; margin: 0 auto; }
+.p-intro { max-width: 38em; margin-bottom: 2.5em; }
+.p-intro > p:not(.p-label) { font-size: 1.02em; line-height: 1.5; }
+.p-intro a { font-size: .78em; }
+.p-label { font: 700 .55em/1.5 sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #53716c; margin: 0 0 .55em; }
+.p-area { margin-bottom: 3em; }
+.p-area > header { border-top: 2px solid #2b7772; padding: 1em 0 1.15em; }
+.p-area > header h2 { font-size: 1.4em; line-height: 1.25; margin: 0 0 .3em; }
+.p-area > header > p:last-child { font-size: .8em; color: #555; margin: 0; }
+.p-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .75em; }
+.p-card { background: #fff; border: 1px solid #d5ddda; padding: 1em 1.1em; display: flex; flex-direction: column; min-width: 0; }
+.p-card h3 { font-size: 1em; line-height: 1.3; margin: .25em 0 .5em; color: #206967; }
+.p-card > p:not(.p-label) { font-size: .73em; line-height: 1.5; color: #505856; margin: 0 0 1em; }
+.p-card > a { font: 600 .62em/1.4 sans-serif; margin-top: auto; }
+.p-detail { border-top: 1px solid #ccd6d2; padding: 1.2em 0 1.7em; scroll-margin-top: 1em; }
+.p-detail h3 { color: #206967; font-size: 1.08em; margin: 0 0 .4em; }
+.p-detail > p { font-size: .8em; margin: 0 0 1em; }
+.p-detail h4 { font: 700 .62em/1.5 sans-serif; text-transform: uppercase; letter-spacing: .05em; margin: 1em 0 .5em; }
+.p-group { margin-bottom: 1.7em; }
+.p-group h3 { font-size: 1em; margin: 0 0 .6em; }
+.p-papers { list-style: none; padding: 0; margin: 0; }
+.p-papers li { border-top: 1px solid #e0e5e2; padding: .5em 0; font-size: .73em; line-height: 1.45; }
+.p-papers li a { display: block; color: #252c2b; font-weight: 600; }
+.p-papers li span { display: block; font-size: .85em; color: #66706c; margin-top: .15em; }
+.resources-page .resource-card { border-radius: 0; border-color: #d5ddda; }
+@media screen and (max-width: 700px) { .p-grid { grid-template-columns: 1fr; } .p-intro > p:not(.p-label) { font-size: .9em; } }

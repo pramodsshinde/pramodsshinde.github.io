@@ -14,7 +14,7 @@ permalink: /
     <h2>Research</h2>
     <p>I develop multi-omics integration and machine learning approaches to identify predictive immune signatures across transcriptomic, proteomic, and immune-profiling data. A major focus is building reproducible computational frameworks to evaluate models of vaccine-induced immunity, including international initiatives such as <a href="https://www.cmi-pb.org/">CMI-PB</a> and CMI-Flu.</p>
     <p>My broader interests span network biology, AI-assisted discovery, and science communication. I enjoy collaborations that bring computational and experimental teams together to understand complex biological systems.</p>
-    <a class="about-research-link" href="{{ '/research/' | relative_url }}">Explore research projects and publications →</a>
+    <a class="about-research-link" href="{{ '/research/' | relative_url }}">Explore research areas →</a>
   </section>
 
   <section class="about-section">
